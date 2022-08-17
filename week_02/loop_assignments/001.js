@@ -12,3 +12,13 @@
 // }
 
 // console.log(s);
+
+let distanceKm = 0;
+let timeH = 0;
+let speed = 0;
+
+do
+{
+    distanceKm = prompt("input distance");
+    
+}while(speed != 0);
