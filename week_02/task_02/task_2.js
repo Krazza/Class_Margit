@@ -7,9 +7,9 @@ something! //
 3 + "65" //undefined 365
 7 - "3" //undefined 4
 15 % 5 // 0
-5 % 15 // 10
+5 % 15 // 5
 "Java" + "Script" // JavaScript 
-"Java" - "Script" //undefined
+"Java" - "Script" //Nan
 " " + " " //"  "
 " " + 0 //undefined " 0"
 true + true // 2
