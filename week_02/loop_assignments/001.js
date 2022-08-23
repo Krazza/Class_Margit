@@ -1,8 +1,10 @@
+//1------------------------------------------
 // for(let i = 1; i <= 100; i+=2)
 // {
 //     console.log(i);
 // }
 
+//2------------------------------------------
 // let s = "";
 
 // for(let a = 2, i = 98; a < 100, i > 2; a += 2, i -= 2)
@@ -13,6 +15,7 @@
 
 // console.log(s);
 
+//3------------------------------------------
 // let distanceKm = 0;
 // let timeH = 0;
 // let speedAv = 0;
@@ -40,6 +43,7 @@
     
 // }while(true);
 
+//4------------------------------------------
 // let counter = 0;
 // let userInput = 0;
 
@@ -53,6 +57,7 @@
 
 // alert(`you gave me ${counter} even numbers`);
 
+//5------------------------------------------
 // let userInput;
 // let sum = 0;
 // let amountOfNumbers = 0;
@@ -81,7 +86,7 @@
 
 // alert(`here is the average ${average}`);
 
-
+//6------------------------------------------
 // let userInput;
 // let sum = 0;
 // let average = 0;
@@ -104,7 +109,7 @@
 // average = sum/25;
 // alert(`here is your average ${average}`);
 
-
+//7------------------------------------------
 // let userInputNumber;
 // let userAnswer;
 // let counter = 0;
@@ -132,6 +137,7 @@
 
 // alert(`here is your average ${average}`);
 
+//8------------------------------------------
 // let counter = 0;
 // let userInput;
 // let smallestNumber;
@@ -162,39 +168,78 @@
 
 // alert(`here is your smallest number: ${smallestNumber}`);
 
-//unfinished
-let userInput;
-let biggestNumber;
-let secondBigestNumber;
+//9------------------------------------------
+// let userInput;
+// let biggestNumber;
+// let secondBigestNumber;
 
-for(let i = 0; i <= 9; i++)
-{
-    userInput = prompt(`Enter a value#${i+1}`);
+// for(let i = 0; i <= 9; i++)
+// {
+//     userInput = prompt(`Enter a value#${i+1}`);
 
-    if(isNaN(userInput) || userInput == null || userInput == "")
-    {
-        alert("enter a VALID number");
-        i -= 1;
-        continue;
-    }
+//     if(isNaN(userInput) || userInput == null || userInput == "")
+//     {
+//         alert("enter a VALID number");
+//         i -= 1;
+//         continue;
+//     }
 
-    if(isNaN(biggestNumber) && isNaN(secondBigestNumber))
-    {
-        biggestNumber = userInput;
-        secondBigestNumber = userInput;
-    } else if(!isNaN(biggestNumber) && !isNaN(secondBigestNumber))
-    {
-        if(parseInt(userInput) > parseInt(biggestNumber))
-        {
-            secondBigestNumber = biggestNumber;
-            biggestNumber = userInput; //set 10, both ten is user < big set
-        }//if user inp < bgst n then 
-        if(+userInput < +biggestNumber)
-        {
-            //upd second biggest
-        }
-            
-    }
-}
+//     if(isNaN(biggestNumber) && isNaN(secondBigestNumber))
+//     {
+//         biggestNumber = userInput;
+//         secondBigestNumber = userInput;
+//     } else if(!isNaN(biggestNumber) && !isNaN(secondBigestNumber))
+//     {
+//         if(+userInput > +biggestNumber)
+//         {
+//             secondBigestNumber = biggestNumber;
+//             biggestNumber = userInput;
 
-alert(`here is your biggest number:${biggestNumber} \nand your second biggest number:${secondBigestNumber}`);
+//         } else if(+userInput < +biggestNumber && +secondBigestNumber < +userInput)
+//         {
+//             secondBigestNumber = userInput;
+
+//         } else if((+userInput < biggestNumber) && i == 1)
+//         {
+//             secondBigestNumber = userInput;
+//         }
+//     }
+// }
+
+// alert(`here is your biggest number:${biggestNumber} \nand your second biggest number:${secondBigestNumber}`);
+
+//10------------------------------------------
+// let userInput;
+// let sum = 0;
+// let average = 0;
+// let smallestNumber;
+// let biggestNumber;
+
+// for(let i = 0; i < 10; i++)
+// {
+//     userInput = prompt(`Input a value#${i + 1} :`);
+//     if(isNaN(userInput) || userInput == "" || userInput == null)
+//     {
+//         alert("Input a valid number!");
+//         --i;
+//         continue;
+//     }
+
+//     if(isNaN(biggestNumber) && isNaN(smallestNumber))
+//     {
+//         biggestNumber = userInput;
+//         smallestNumber = userInput;
+//     } else if(+userInput > +biggestNumber)
+//         biggestNumber = userInput;
+//     else if(+userInput < +smallestNumber)
+//         smallestNumber = userInput;
+
+//     sum = (+sum) + (+userInput);
+// }
+
+// average = sum/10;
+
+// alert(`here is your average: ${average}
+// and here is your sum: ${sum}
+// and here is the smallest number: ${smallestNumber}
+// and here is the biggest number: ${biggestNumber}`);
