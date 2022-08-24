@@ -1,0 +1,24 @@
+#theOneAndOnlyBttn{
+    height: 36px;
+    width: 72px;
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+    margin-top: 18px;
+    background-color: lightblue;
+    color: lightsalmon;
+}
+
+input, button {
+    font-family: inherit;
+}
+
+body {
+
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+
+}
