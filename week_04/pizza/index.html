@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> Pizza time!</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="selectorClass">
+            <h2> Enter your name </h2>
+            <form>
+                <label for="name"> First Name </label>
+                <input type="text" id="name" placeholder="Your name">
+            </form>
+        </div>
+        <div class="selectorClass">
+            <h2> Choose your pizza size </h2>
+            <form>
+                <section>
+                    <input type="radio" id="Stwo" name="size" value="2">
+                    <label for="two"> For 2, the price is 7,50€ </label>
+                </section>
+                <section>
+                    <input type="radio" id="Sfour" name="size" value="4">
+                    <label for="four"> For 4, the price is 10,50€ </label>
+                </section>
+                <section>
+                    <input type="radio" id="Ssix" name="size" value="6">
+                    <label for="six"> For 6, the price is 12,50€ </label>
+                </section>
+                <section>
+                    <input type="radio" id="Seight" name="size" value="8">
+                    <label for="eight"> For 8, the price is 15,50€ </label>
+                </section> 
+            </form>
+        </div>
+        <div class="selectorClass">
+            <h2> Toppings </h2>
+            <form>
+                <section>
+                    <input type="checkbox" id="top1" value="chocolate">
+                    <label for="top1"> Chocolate </label>
+                </section>
+                <section>
+                    <input type="checkbox" id="top2" value="ketchup">
+                    <label for="top2"> Ketchup </label>
+                </section>
+                <section>
+                    <input type="checkbox" id="top3" value="mayo">
+                    <label for="top3"> Mayo </label>
+                </section>
+                <section>
+                    <input type="checkbox" id="top4" value="jelly">
+                    <label for="top4"> Jelly </label>
+                </section>
+                <section>
+                    <input type="checkbox" id="top5" value="mustard">
+                    <label for="top5"> Mustartd </label>
+                </section>
+                <section>
+                    <input type="checkbox" id="top6" value="oil">
+                    <label for="top6"> Oil </label>
+                </section>
+                <section>
+                    <input type="checkbox" id="top7" value="pineapple">
+                    <label for="top7"> Pineapple </label>
+                </section>
+                <section>
+                    <input type="checkbox" id="top8" value="snow">
+                    <label for="top8"> Snow </label>
+                </section>
+                <section>
+                    <input type="checkbox" id="top9" value="dirt">
+                    <label for="top9"> Dirt </label>
+                </section>
+                <section>
+                    <input type="checkbox" id="top10" value="milk">
+                    <label for="top10"> Milk </label>
+                </section>
+            </form>
+        </div>
+        <div class="selectorClass">
+            <h2> Delivery method </h2>
+            <form>
+                <label for="DMethod"> Choose your delivery method: </label>
+                <select id="DMethod">
+                    <option value="delivery"> Delivery home, +5€ </option>
+                    <option value="in"> Eat in </option>
+                    <option value="pick up"> Pick up </option> 
+                </select>
+            </form>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
