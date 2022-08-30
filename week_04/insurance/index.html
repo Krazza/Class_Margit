@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> SCAM </title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="spacerClass">
+            <h2> Enter your name </h2>
+            <label for="userName"> First name </label>
+            <input type="text" id="userName" name="nameInput">
+        </div>
+        <div class="spacerClass">
+            <h2> Specify your age </h2>
+            <label for="userAge"> Age </label>
+            <input type="number" id="userAge" name="ageInput">
+        </div>
+        <div class="spacerClass">
+            <h2> Any conditions? </h2>
+            <section>
+                <input type="checkbox" id="userHypertension" name="conditionsInput" value="Hypertension">
+                <label for="userHypertension"> Hypertension </label>
+            </section>
+            <section>
+                <input type="checkbox" id="userSugar" name="conditionsInput" value="Blood sugar">
+                <label for="userSugar"> Blood sugar </label>
+            </section>
+            <section>
+            <input type="checkbox" id="userWeight" name="conditionsInput" value="Overweight">
+            <label for="userWeight"> Overweight </label>
+            </section>
+        </div>
+        <div class="spacerClass">
+            <h2> Habits </h2>
+            <section>
+            <input type="checkbox" id="userSmoking" name="habitsInput" value="bad">
+            <label for="userSmoking"> Smoking </label>
+            </section>
+            <section>
+            <input type="checkbox" id="userAlcohol" name="habitsInput" value="bad">
+            <label for="userAlcohol"> Alcohol </label>
+            </section> 
+            <section>
+            <input type="checkbox" id="userExercise" name="habitsInput" value="good">
+            <label for="userExercise"> Daily exercise </label>
+            </section>
+            <section>
+            <input type="checkbox" id="userDrugs" name="habitsInput" value="bad">
+            <label for="userDrugs"> Drugs </label>
+            </section>
+        </div>
+        <div class="spacerClass">
+            <input type="button" id="resultsBttn" name="resultsInput" value="Calculate" onclick="HandleInput()">
+            <p id="results"></p>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

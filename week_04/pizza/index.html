@@ -9,27 +9,27 @@
             <h2> Enter your name </h2>
             <form>
                 <label for="name"> First Name </label>
-                <input type="text" id="name" placeholder="Your name">
+                <input type="text" id="userName" placeholder="Your name">
             </form>
         </div>
         <div class="selectorClass">
             <h2> Choose your pizza size </h2>
             <form>
                 <section>
-                    <input type="radio" id="Stwo" name="size" value="2">
-                    <label for="two"> For 2, the price is 7,50€ </label>
+                    <input type="radio" id="sizeTwo" name="Pzsize" value="2" checked>
+                    <label for="sizeTwo"> For 2, the price is 7,50€ </label>
                 </section>
                 <section>
-                    <input type="radio" id="Sfour" name="size" value="4">
-                    <label for="four"> For 4, the price is 10,50€ </label>
+                    <input type="radio" id="sizeFour" name="Pzsize" value="4">
+                    <label for="sizeFour"> For 4, the price is 10,50€ </label>
                 </section>
                 <section>
-                    <input type="radio" id="Ssix" name="size" value="6">
-                    <label for="six"> For 6, the price is 12,50€ </label>
+                    <input type="radio" id="sizeSix" name="Pzsize" value="6">
+                    <label for="sizeSix"> For 6, the price is 12,50€ </label>
                 </section>
                 <section>
-                    <input type="radio" id="Seight" name="size" value="8">
-                    <label for="eight"> For 8, the price is 15,50€ </label>
+                    <input type="radio" id="sizeEight" name="Pzsize" value="8">
+                    <label for="sizeEight"> For 8, the price is 15,50€ </label>
                 </section> 
             </form>
         </div>
@@ -37,43 +37,43 @@
             <h2> Toppings </h2>
             <form>
                 <section>
-                    <input type="checkbox" id="top1" value="chocolate">
-                    <label for="top1"> Chocolate </label>
+                    <input type="checkbox" id="top1" name="tops" value="chocolate">
+                    <label for="top1"> Chocolate </label> 
                 </section>
                 <section>
-                    <input type="checkbox" id="top2" value="ketchup">
+                    <input type="checkbox" id="top2" name="tops" value="ketchup">
                     <label for="top2"> Ketchup </label>
                 </section>
                 <section>
-                    <input type="checkbox" id="top3" value="mayo">
+                    <input type="checkbox" id="top3" name="tops" value="mayo">
                     <label for="top3"> Mayo </label>
                 </section>
                 <section>
-                    <input type="checkbox" id="top4" value="jelly">
+                    <input type="checkbox" id="top4" name="tops" value="jelly">
                     <label for="top4"> Jelly </label>
                 </section>
                 <section>
-                    <input type="checkbox" id="top5" value="mustard">
+                    <input type="checkbox" id="top5" name="tops" value="mustard">
                     <label for="top5"> Mustartd </label>
                 </section>
                 <section>
-                    <input type="checkbox" id="top6" value="oil">
+                    <input type="checkbox" id="top6" name="tops" value="oil">
                     <label for="top6"> Oil </label>
                 </section>
                 <section>
-                    <input type="checkbox" id="top7" value="pineapple">
+                    <input type="checkbox" id="top7" name="tops" value="pineapple">
                     <label for="top7"> Pineapple </label>
                 </section>
                 <section>
-                    <input type="checkbox" id="top8" value="snow">
+                    <input type="checkbox" id="top8" name="tops" value="snow">
                     <label for="top8"> Snow </label>
                 </section>
                 <section>
-                    <input type="checkbox" id="top9" value="dirt">
+                    <input type="checkbox" id="top9" name="tops" value="dirt">
                     <label for="top9"> Dirt </label>
                 </section>
                 <section>
-                    <input type="checkbox" id="top10" value="milk">
+                    <input type="checkbox" id="top10" name="tops" value="milk">
                     <label for="top10"> Milk </label>
                 </section>
             </form>
@@ -88,6 +88,9 @@
                     <option value="pick up"> Pick up </option> 
                 </select>
             </form>
+        </div>
+        <div class="selectorClass">
+            <input type ="button" id="orderBttn" value="Order" onclick="Debug()">
         </div>
         <script src="main.js"></script>
     </body>
