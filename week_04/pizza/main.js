@@ -16,16 +16,16 @@ function Debug()
 
     switch(pizzaSizeRadInp)
     {
-        case "2":
+        case "Pizza for 2":
             price += 7.5;
             break;
-        case "4":
+        case "Pizza for 4":
             price += 10.5;
             break;
-        case "6":
+        case "Pizza for 6":
             price += 12.5;
             break;
-        case "8":
+        case "Pizza for 8":
             price += 15.5;
             break;
         default:
@@ -39,6 +39,8 @@ function Debug()
         price += 5;
     
 
-    output.innerHTML = `Here is your order, ${userNameTxtInp}: 
-    Pizza size:`;
+    output.innerHTML = `Here is your order, ${userNameTxtInp.value}:
+    Pizza size: ${pizzaSizeRadInp}
+    Chosen toppings: ${toppingsCheckBxInpt}
+    Delivery method: ${selectedDlvrOption.value}`;
 }
