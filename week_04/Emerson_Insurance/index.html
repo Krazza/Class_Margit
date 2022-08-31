@@ -2,20 +2,25 @@
 <html>
     <head>
         <title> SCAM </title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
-        <div class="spacerClass">
+        <form id="form">
+        <div class="inputContainer">
+        <h1> Insurance calculator </h1> 
+        <p id="results"> Fill the forms, please. </p>
+        <div class="inputSection">
             <h2> Enter your name </h2>
             <label for="userName"> First name </label>
-            <input type="text" id="userName" name="nameInput">
+            <input class="myInputClass" type="text" id="userName" name="nameInput" placeholder="Your name">
         </div>
-        <div class="spacerClass">
+        <div class="inputSection">
             <h2> Specify your age </h2>
             <label for="userAge"> Age </label>
-            <input type="number" id="userAge" name="ageInput">
+            <input class="myInputClass" type="number" id="userAge" name="ageInput" placeholder="18">
         </div>
-        <div class="spacerClass">
+        <div class="inputSection">
             <h2> Any conditions? </h2>
             <section>
                 <input type="checkbox" id="userHypertension" name="conditionsInput" value="Hypertension">
@@ -30,7 +35,7 @@
             <label for="userWeight"> Overweight </label>
             </section>
         </div>
-        <div class="spacerClass">
+        <div class="inputSection">
             <h2> Habits </h2>
             <section>
             <input type="checkbox" id="userSmoking" name="habitsInput" value="bad">
@@ -49,10 +54,11 @@
             <label for="userDrugs"> Drugs </label>
             </section>
         </div>
-        <div class="spacerClass">
-            <input type="button" id="resultsBttn" name="resultsInput" value="Calculate" onclick="HandleInput()">
-            <p id="results"></p>
+        <div class="inputSection">
+            <input type="button" class="buttonClass" id="resultsBttn" name="resultsInput" value="CALCULATE" onclick="HandleInput()">
         </div>
+    </div>
+        </form>
         <script src="main.js"></script>
     </body>
 </html>

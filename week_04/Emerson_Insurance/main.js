@@ -1,5 +1,6 @@
 function HandleInput()
 {
+    let myForm = document.querySelector('#form');
     let userNameInput = document.querySelector("#userName").value;
     let userAge = document.querySelector("#userAge").value;
     
@@ -12,7 +13,6 @@ function HandleInput()
     userHabitsArray = Array.from(userHabitsInput).map(item => item.value);
 
     let output = document.querySelector("#results");
-
     let price = 500;
 
     if(userAge >= 18 && userAge <= 25)
@@ -42,5 +42,10 @@ function HandleInput()
             price = price - (price * 0.05);
     }
 
-    output.innerHTML = `Here is the price of your insurance: ${Math.floor(price)}€, ${userNameInput}.`;
+    output.innerHTML = `Here is the price of your insurance, ${userNameInput}: ${Math.floor(price)} &euro;.`;
+    output.style.textDecoration = "underline";
+    output.style.textDecorationColor = "#85AF58";
+    output.style.textDecorationThickness = "8px";
+
+    form.reset();
 }

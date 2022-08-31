@@ -10,6 +10,8 @@ function Debug()
     let selectDeliveryInp = document.querySelector('#DMethod');
     let selectedDlvrOption = selectDeliveryInp.options[selectDeliveryInp.selectedIndex];
 
+    let output = document.querySelector("#results");
+
     let price = 0;
 
     switch(pizzaSizeRadInp)
@@ -37,9 +39,6 @@ function Debug()
         price += 5;
     
 
-    console.log(userNameTxtInp.value);
-    console.log(pizzaSizeRadInp);
-    console.log(toppingsCheckBxInpt);
-    console.log(selectedDlvrOption.value);
-    console.log(price);
+    output.innerHTML = `Here is your order, ${userNameTxtInp}: 
+    Pizza size:`;
 }
