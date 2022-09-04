@@ -3,16 +3,24 @@
     <head> 
         <title> Pizza time!</title>
         <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://fonts.google.com/specimen/Lobster?category=Display"/>
     </head>
     <body>
-        <div class="selectorClass">
+        <div class="backDiv">
+        <div class="picDiv">
+            <img src="/week_04/pizza/wallpaperflare.com_wallpaper.jpg">
+        </div>
+        <div class="outerDiv">
+        <div class="resultsClass"><p id="results"></p></div>
+        <div class="innerDiv">
+        <div class>
             <h2> Enter your name </h2>
             <form>
                 <label for="name"> First Name </label>
                 <input type="text" id="userName" placeholder="Your name">
             </form>
         </div>
-        <div class="selectorClass">
+        <div>
             <h2> Choose your pizza size </h2>
             <form>
                 <section>
@@ -33,9 +41,9 @@
                 </section> 
             </form>
         </div>
-        <div class="selectorClass">
+        <div>
             <h2> Toppings </h2>
-            <form>
+            <form class="checkboxes">
                 <section>
                     <input type="checkbox" id="top1" name="tops" value="chocolate">
                     <label for="top1"> Chocolate </label> 
@@ -78,21 +86,23 @@
                 </section>
             </form>
         </div>
-        <div class="selectorClass">
+        <div>
             <h2> Delivery method </h2>
             <form>
                 <label for="DMethod"> Choose your delivery method: </label>
                 <select id="DMethod">
-                    <option value="delivery"> Delivery home, +5€ </option>
-                    <option value="in"> Eat in </option>
+                    <option value="delivery home"> Delivery home, +5€ </option>
+                    <option value="eating in"> Eat in </option>
                     <option value="pick up"> Pick up </option> 
                 </select>
             </form>
         </div>
-        <div class="selectorClass">
-            <input type ="button" id="orderBttn" value="Order" onclick="Debug()">
-            <p id="results"></p>
+        <div>
+            <input type ="button" class="myButtonClass" id="orderBttn" value="ORDER" onclick="Debug()">
         </div>
         <script src="main.js"></script>
+        </div>
+        </div>
+    </div>
     </body>
 </html>

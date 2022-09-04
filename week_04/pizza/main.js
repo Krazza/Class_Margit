@@ -39,8 +39,8 @@ function Debug()
         price += 5;
     
 
-    output.innerHTML = `Here is your order, ${userNameTxtInp.value}:
-    Pizza size: ${pizzaSizeRadInp}
-    Chosen toppings: ${toppingsCheckBxInpt}
-    Delivery method: ${selectedDlvrOption.value}`;
+    output.innerHTML = `<span id="S1">Here is your order, ${userNameTxtInp.value}: </span>
+    <span id="S2"> Pizza size: ${pizzaSizeRadInp} </span>
+    <span id="S3"> Chosen toppings: ${toppingsCheckBxInpt} </span>
+    <span id="S4"> Delivery method: ${selectedDlvrOption.value} </span>`;
 }

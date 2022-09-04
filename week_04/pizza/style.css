@@ -1,4 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .selectorClass{
     margin-left: 32px;
     margin-top: 16px;
+} 
+
+div {
+    display: inline-block;
+}
+
+body{
+    background-color: #62DE7A;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.innerDiv{
+    width: 60%;
+    min-width: 60%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: 0;
+    background-color: #912333;
+}
+
+.innerDiv div{
+    display: block;
+    text-align: center;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+section{
+    margin-top: 2%;
+}
+
+.outerDiv{
+    background-color: #DE4058;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 0%;
+    height: 100%;
+    display: flex;
+    margin-right: 0;
+}
+
+.outerDiv p{
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-top: 100%;
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+.resultsClass{
+    width: 40%;
+}
+
+.innerDiv section{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.innerDiv input{
+    flex: 1;
+}
+
+.innerDiv label{
+    align-self: center;
+    flex: 2;
+}
+
+.innerDiv h2{
+    margin-bottom: 5%;
+}
+
+#userName{
+    width: 40%;
+    height: 30px;
+}
+
+.myButtonClass{
+    width: 40%;
+    height: 40px;
+    background-color: #FF637B;
+    border-radius: 12px;
+    color: #FFFFFF;
+    border-width: 0px;
+    font-size: 1.2em;
+    padding-left: 0;
+}
+
+select{
+    height: 40px;
+}
+
+#S1, #S2, #S3, #S4{
+    font-family: Lobster;
+    line-height: 2;
+    
+}
+
+#S1{
+    font-size: 20pt;
+    color: #B1FF70;
+    
+}
+
+#S2{
+    color: #FFF97D;
+}
+
+#S3{
+    color: #4AC7FF;
+}
+
+#S4{
+    color: #4AFFD4;
+}
+
+#S2, #S3, #S4
+{
+    font-size: 1.2em;
+}
+
+.picDiv{
+    max-width: 30%;
+    width: 30%;
+}
+
+.picDiv img{
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+}
+
+.backDiv{
+    height: 100%;
+    display: flex;
 }
