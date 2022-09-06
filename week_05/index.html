@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div>
+    <h1> Linear gradient generator </h1>
+    <section>
+        <h3> Colors </h3>
+        <input type="color" id="colorTwo">
+        <input type="color" id="colorOne">
+    </section>
+    <section>
+        <h3> Direction </h3>
+        <label for="NW"><span class="material-symbols-outlined" onclick="LabelClicked('NW')"> north_west </span></label>
+        <input type="radio" id="NW" name="colors" value="NW" checked>
+        <label for="N"><span class="material-symbols-outlined" onclick="LabelClicked('N')"> north </span></label>
+        <input type="radio" id="N" name="colors" value="N">
+        <label for="NE"><span class="material-symbols-outlined" onclick="LabelClicked('NE')"> north_east </span></label>
+        <input type="radio" id="NE" name="colors" value="NE">
+        <label for="E"><span class="material-symbols-outlined" onclick="LabelClicked('E')"> east </span></label>
+        <input type="radio" id="E" name="colors" value="E">
+        <label for="SE"><span class="material-symbols-outlined" onclick="LabelClicked('SE')"> south_east </span></label>
+        <input type="radio" id="SE" name="colors" value="SE">
+        <label for="S"><span class="material-symbols-outlined" onclick="LabelClicked('S')"> south </span></label>
+        <input type="radio" id="S" name="colors" value="S">
+        <label for="SW"><span class="material-symbols-outlined" onclick="LabelClicked('SW')"> south_west </span></label>
+        <input type="radio" id="SW" name="colors" value="SW">
+        <label for="W"><span class="material-symbols-outlined" onclick="LabelClicked('W')"> west </span></label>
+        <input type="radio" id="W" name="colors" value="W">
+    </section>
+    <section>
+        <h3> CSS code </h3>
+        <p id="cssCode"> </p>
+    </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
