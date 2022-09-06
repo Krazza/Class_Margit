@@ -6,7 +6,8 @@ function LabelClicked(selectedId)
     let colorTwo = document.querySelector(`#colorTwo`).value;
     
     let clickedLabel = document.querySelector(`label[for=${selectedId}]`);
-    clickedLabel.firstChild.style.fontSize = "80px";
+    clickedLabel.firstChild.style.fontSize = "60px";
+    clickedLabel.firstChild.style.color = "rgb(37, 207, 111)"
 
     for(let i = 0; i < labels.length; ++i)
     {
@@ -15,6 +16,7 @@ function LabelClicked(selectedId)
         else 
         {
             document.querySelector(`label[for=${labels[i]}]`).firstChild.style.fontSize = "40px";
+            document.querySelector(`label[for=${labels[i]}]`).firstChild.style.color = "rgb(0, 0, 0)";
         }
     }
 
