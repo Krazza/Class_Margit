@@ -35,9 +35,16 @@
             <label for="carColor"> Car color </label>
             <input type="text" id="carColor" name="color">
             </section>
-            <section id="bttnSection">
+            <section id="bttnSection01">
             <input type="button" class="myButtonClass" value="ADD CAR" onclick="SaveCarInfo()">
             <input type="button" class="myButtonClass" value="RESET" onclick="Reset()">
+            </section>
+            <section id="bttnSection02">
+             <input type="button" class="myButtonClass" value="SEARCH" onclick="Search()">
+             <input type="text" id="search" name="searchN" placeholder="Licence plate number">
+            </section>
+            <section> 
+                <p id="searchResult">Input a licence number and press search.</p>
             </section>
         </div>
         <div class="tableContainer">

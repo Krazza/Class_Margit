@@ -2,11 +2,14 @@
 
 let table = document.querySelector(`#resultTable`);
 let tableBody = document.querySelector(`#bodyT`);
+let resultBox = document.querySelector(`#searchResult`);
+let searchBox = document.querySelector(`#search`);
+let inputs = document.querySelectorAll(`input[type=text]`);
+
+let addedCars = [];
 
 function SaveCarInfo()
 {
-    let inputs = document.querySelectorAll(`input[type=text]`);
-
     Append(CreateCar(inputs));
 }
 
@@ -57,6 +60,11 @@ function Append(car)
     cellOwner.innerHTML = car.owner;
     cellPrice.innerHTML = car.price;
     cellColor.innerHTML = car.color;
+
+    addedCars.push(car);
+    console.table(addedCars);
+
+    ClearFields();
 }
 
 function Reset()
@@ -65,18 +73,46 @@ function Reset()
     
     table.replaceChild(new_body, tableBody);
     tableBody = new_body;
+    addedCars = [];
+    resultBox.innerHTML = "Input a licence number and press search."
+    searchBox.value = '';
+
+    ClearFields();
+}
+
+function Search()
+{
+    let plate = searchBox.value;
+
+    addedCars.forEach(function(car)
+    {
+        if(car.licence == plate)
+        {
+            let textResults = `Car mark: ${car.maker}, car model: ${car.model}, car owner: ${car.owner}.`;
+            
+            resultBox.innerHTML = textResults;
+        }
+    });
+}
+
+function ClearFields() 
+{
+    inputs.forEach(function (item) 
+    {
+        item.value = '';
+    });
 }
 
 class Car 
 {
     constructor(licence, maker, model, owner, price, color)
     {
-        this.carLicence = licence;
-        this.carMaker = maker;
-        this.carModel = model;
-        this.carOwner = owner;
-        this.carPrice = price;
-        this.carColor = color;        
+        this.licence = licence;
+        this.maker = maker;
+        this.model = model;
+        this.owner = owner;
+        this.price = price;
+        this.color = color;        
     }
 
     Vroom()

@@ -40,9 +40,13 @@ body{
     margin-top: 10%;
 }
 
-.inputContainer #bttnSection{
+#bttnSection01{
     align-self: center;
-    margin-bottom: 10%;
+}
+
+#bttnSection02{
+    align-self: center;
+    display: inline-block;
 }
 
 .tableContainer{
@@ -84,4 +88,16 @@ th{
     width: 160px;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+#search{
+    display: inline-block;
+    margin-right: 0;
+    margin-left: 10px;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    margin-bottom: 10%;
 }
