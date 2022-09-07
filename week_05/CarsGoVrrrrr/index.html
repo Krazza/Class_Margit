@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ka-chow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="parentContainer">
+        <div class="inputContainer">
+            <h2> Insert car data </h2>
+            <section>
+            <label for="licenceNum"> Licence number </label>
+            <input type="text" id="licenceNum" name="licence">
+            </section>
+            <section>
+            <label for="carMaker"> Car maker </label>
+            <input type="text" id="carMaker" name="maker">
+            </section>
+            <section>
+            <label for="carModel"> Car model </label>
+            <input type="text" id="carModel" name="model">
+            </section>
+            <section>
+            <label for="carOwner"> Car owner </label>
+            <input type="text" id="carOwner" name="owner">
+            </section>
+            <section>
+            <label for="carPrice"> Car price </label>
+            <input type="text" id="carPrice" name="price">
+            </section>
+            <section>
+            <label for="carColor"> Car color </label>
+            <input type="text" id="carColor" name="color">
+            </section>
+            <section id="bttnSection">
+            <input type="button" class="myButtonClass" value="ADD CAR" onclick="SaveCarInfo()">
+            <input type="button" class="myButtonClass" value="RESET" onclick="Reset()">
+            </section>
+        </div>
+        <div class="tableContainer">
+            <h2> Car database </h2>
+            <table id="resultTable">
+                <thead>
+                    <tr>
+                        <th>LICENCE</th>
+                        <th>MAKER</th>
+                        <th>MODEL</th>
+                        <th>OWNER</th>
+                        <th>PRICE</th>
+                        <th>COLOR</th>
+                    </tr>
+                </thead>
+                <tbody id="bodyT">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
