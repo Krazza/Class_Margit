@@ -1,29 +1,7 @@
 function LabelClicked(selectedId)
 {
-    let labels = ["NW", "N", "NE", "E", "SE", "S", "SW", "W"];
-
     let colorOne = document.querySelector(`#colorOne`).value;
     let colorTwo = document.querySelector(`#colorTwo`).value;
-    
-    let clickedLabel = document.querySelector(`label[for=${selectedId}]`);
-    clickedLabel.firstChild.style.fontSize = "60px";
-    clickedLabel.firstChild.style.color = "rgb(37, 207, 111)"
-
-    for(let i = 0; i < labels.length; ++i)
-    {
-        if(labels[i] == selectedId)
-            continue;
-        else 
-        {
-            document.querySelector(`label[for=${labels[i]}]`).firstChild.style.fontSize = "40px";
-            document.querySelector(`label[for=${labels[i]}]`).firstChild.style.color = "rgb(0, 0, 0)";
-        }
-    }
-
-
-    document.body.style.backgroundRepeat = "no-repeat";
-    document.body.style.backgroundSize = "100% 100%";
-    document.body.style.backgroundAttachment = "fixed";
 
     switch(selectedId)
     {
