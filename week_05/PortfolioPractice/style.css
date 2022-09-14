@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5% 3% 1.5% 1.5%;
+    gap: 15px;
+} */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.stickyHeader{
+    position: sticky;
+    top:0;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #19191982;
+    color: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    position: relative;
+    background-color: #F2F4F0;
+    min-height: 50vh;
+    width: 50vw;
+    border-radius: 10px;
+    padding: 3rem;
+}
+
+.close {
+    position: absolute;
+    top: -0.8rem;
+    right: 0.7rem;
+}
+
+.overlay,
+.modal,
+.close {
+    display: none;
+}
+
+.modal h3{
+    padding: 0% 0% 3% 0;
+}
+
+nav{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    align-items: center;
+    padding-right: 3%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+h2, h3{
+    padding-left: 3%;
+    padding-top:1.5%;
+    padding-bottom: 1.5%;
+}
+
+.headContent{
+    background-color: #78728D;
+    color: #F2F4F0;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#firstPar, #secondPar, #thirdPar, #fourthPar{
+    height: 60vh;
+    width: 100vw;
+    scroll-margin-top: 5em;
+}
+
+.bg{
+    background-color: #232348;
+}
+
+#firstPar{
+    background-color: #F2F4F0;
+    color: #232348;
+}
+
+.myButtonClass{
+    height: 48px;
+    width: 120px;
+    border-radius: 12px;
+    border-width: 0;
+    font-size: 1rem;
+    background-color:#7A5481;
+    color: #F2F4F0;
+    margin-top: 3%;
+}
+
+#common{
+    margin: 1.5% 0 0 3%;
+}
+
+#toTopButton{
+    display: none;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+
+#secondPar{
+    background-color: #232348;
+    color: #F2F4F0;
+}
+
+#thirdPar{
+    background-color: #F2F4F0;
+    color: #232348;
+}
+
+#fourthPar{
+    background-color: #232348;
+    color: #F2F4F0;
+}
+
+footer{
+    background-color: #191919;
+    color: #F2F4F0;
+    text-align: center;
+    height: 3%;
+    padding: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#mobileButton
+{
+    display: none;
+}
+
+nav.responsive a{
+    display: block;
+}
+
+@media only screen and (max-width: 800px) {
+
+    nav a{
+        display: none;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+    
+    #mobileButton{
+        background-color: transparent;
+        color: #F2F4F0;
+        display: block;
+        border: none;
+        padding: 1rem;
+    }
+
+    nav.responsive a{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 85px;
+        color: #232348;
+        padding-top: 10px;
+    }
+}
