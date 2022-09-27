@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/drumview.jpeg");;
+    font-family: 'Press Start 2P', cursive;
+    color:gold;
+}
+
+.outerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100vh;
+}
+
+.outerContainer h1{
+    margin-top: 2%;
+}
+
+.gameControlButton {
+
+    height: 10vh;
+    width:fit-content;
+    border-radius: 14px;
+    border-width: 0;
+    font-family: 'Press Start 2P', cursive;
+    background-color: gold;
+    padding: 10px;
+}
