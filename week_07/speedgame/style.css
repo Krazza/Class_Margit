@@ -26,10 +26,44 @@ body{
 .gameControlButton {
 
     height: 10vh;
-    width:fit-content;
+    width: 200px;
     border-radius: 14px;
     border-width: 0;
     font-family: 'Press Start 2P', cursive;
     background-color: gold;
     padding: 10px;
+}
+
+#stopGame {
+    display: none;
+}
+
+#banner {
+    background-color: rgba(187, 168, 134, 1);
+    border-radius: 22px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: gold;
+    width: 50vw;
+    height: 40vh;
+    top: 33%;
+    left: 25%;
+    position: absolute;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#bck{
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    color: #333;
+    top:0;
+    left: 0;
 }
