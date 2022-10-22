@@ -11,28 +11,26 @@
     <title>Pokedex</title>
 </head>
 <body>
-    <header>
+    <header></header>
+    <div id="containerContainer">
+    <div id="searchArea">
         <h1>Pokedex</h1>
+        <p id="searchText"> Select a generation </p>
+        <input type="text" id="searchField" placeholder="Search a pokemon by name" onkeyup="Search()"/>
         <section id="filter">
-            <input type="text" id="searchField" placeholder="Search a pokemon by name" />
             <input type="button" id="gen_01" value="Gen 1"/>
             <input type="button" id="gen_02" value="Gen 2"/>
             <input type="button" id="gen_03" value="Gen 3"/>
+            <input type="button" id="gen_04" value="Gen 4"/>
+            <input type="button" id="gen_05" value="Gen 5"/>
+            <input type="button" id="gen_06" value="Gen 6"/>
+            <input type="button" id="gen_07" value="Gen 7"/>
         </section>
-    </header>
+    </div>
     <div id="container" class="cardContainer">
-    <div class="pokemonCard">
-        <div id="pics" class="pic cardContent"></div>
-        <div class="type cardContent"></div>
-        <div class="name cardContent"></div>
-        <div class="abilities cardContent"></div>
-        <div class="stats cardContent"></div>
     </div>
-    <div class="pokemonCard"></div>
-    <div class="pokemonCard"></div>
-    <div class="pokemonCard"></div>
-    <div class="pokemonCard"></div>
     </div>
+    <footer></footer>
     <script src="main.js"></script>
 </body>
 </html>
